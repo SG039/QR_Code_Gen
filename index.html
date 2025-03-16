@@ -8,7 +8,31 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-     <div class="container"></div>
-    
+     <div class="container">
+        <h2>QR Code Generator</h2>
+
+        <div class="form-group">
+            <div class="form-control">
+                <label for="text">Enter your text or url</label>
+                <input type="text" id="qrtext">
+            </div>
+            <div class="form-control">
+                <label for="size">Size</label>
+                <select name="qrsize" id="qrSizes"></select>
+            </div>
+            <div class="form-control">
+                <label for="background">Background Color</label>
+                <input type="color" id="colorlight">
+            </div>
+            <div class="form-control">
+                <label for="foreground">Foreground Color</label>
+                <input type="color" id="colordark">
+            </div> 
+        </div>
+        <div class="qrCodeView"></div>
+        <div class="form-button">
+            <button>Download</button>
+        </div>
+     </div>
 </body>
 </html>

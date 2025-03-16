@@ -5,3 +5,44 @@
     font-family: "Poppins";
     box-sizing: border-box ;
   }
+
+  body{
+    background: rgb(73, 172, 185);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.container{
+    background: white;
+    padding: 2rem;
+    border-radius: 5px;
+    min-width: 1rem;
+    min-width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form.control{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.form.control input,
+.form.control select{
+    width: 50%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-size: 18px;
+    padding: 0.15px;
+}
