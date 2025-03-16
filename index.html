@@ -14,25 +14,27 @@
         <div class="form-group">
             <div class="form-control">
                 <label for="text">Enter your text or url</label>
-                <input type="text" id="qrtext">
+                <input type="text" id="qrText" onkeyup="generateQRCode()">
             </div>
             <div class="form-control">
                 <label for="size">Size</label>
-                <select name="qrsize" id="qrSizes"></select>
+                <select name="qrsize" id="qrSizes" onchange="generateQRCode()"></select>
             </div>
             <div class="form-control">
                 <label for="background">Background Color</label>
-                <input type="color" id="colorlight">
+                <input type="color" id="colorLight" value="#ffffff" onchange="generateQRCode()">
             </div>
             <div class="form-control">
                 <label for="foreground">Foreground Color</label>
-                <input type="color" id="colordark">
+                <input type="color" id="colorDark" value="#000000" onchange="generateQRCode()">
             </div> 
         </div>
         <div class="qrCodeView"></div>
-        <div class="form-button">
-            <button>Download</button>
+
+        <div class="form-button" id="downloadBtn" style="display: none">
+            <button onclick="downloadQRCode()">Download</button>
         </div>
      </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js"></script>
 </body>
 </html>

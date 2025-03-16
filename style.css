@@ -78,3 +78,26 @@ button {
     text-align: center;
     padding: 10px;
 }
+
+.qrCodeView {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    margin: 10px;
+    border: 2px dashed #555;
+    border-radius: 5px;
+    pointer-events: none;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
